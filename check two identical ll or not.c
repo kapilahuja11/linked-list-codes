@@ -37,7 +37,7 @@ int check(struct node *root1,struct node *root2){
 	struct node *temp=root1,*temp1=root2;
 	while(1)
 	{
-	if(temp->next==NULL && temp1->next==NULL)
+	if(temp->next==NULL && temp1->next==NULL && temp->data == temp1->data)
 	   return 1;
 	if(temp->next==NULL || temp1->next==NULL)
 	   return 0;
