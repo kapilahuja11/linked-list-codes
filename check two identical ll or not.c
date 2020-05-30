@@ -25,10 +25,10 @@ void linkedlist(struct node **root)
 	    	while(temp1->next!=NULL)
 	    	{
 	    		temp1=temp1->next;
-			}
+		}
 			temp1->next=temp;
 			temp->next=NULL;
-		}	
+	}	
 }
 
 
@@ -67,17 +67,17 @@ int main()
 	     	case 1:linkedlist(&root1);
 	     	  break;
 	     	case 2:linkedlist(&root2);
-	     	break;
+	     	  break;
 	     	case 3:k=check(root1,root2);
 	     	       if(k==1)
 	     	       printf("\n linked list is identical");
 	     	       else
 	     	       printf("\n linked list is not identical");
-	     	break;
+	     	       break;
 	       	case 4:exit(0); 
-	     	break;
+	     	   break;
 	     	default:printf("\nyou have entered wrong choice:");
-		 }
+	     }
 	
 	}
 }	
